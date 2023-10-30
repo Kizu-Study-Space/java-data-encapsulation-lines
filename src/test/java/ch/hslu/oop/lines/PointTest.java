@@ -22,5 +22,10 @@ public class PointTest {
         Point newPoint = point.moveRelative(3, 4);
         assertEquals(4, newPoint.getX());
         assertEquals(6, newPoint.getY());
+
+        Point vectorPoint = new Point(3, 4);
+        newPoint = point.moveRelative(vectorPoint);
+        assertEquals(4, newPoint.getX());
+        assertEquals(6, newPoint.getY());
     }
 }

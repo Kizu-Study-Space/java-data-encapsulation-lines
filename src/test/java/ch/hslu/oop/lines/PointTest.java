@@ -8,12 +8,18 @@ public class PointTest {
     public void testGetX() {
         Point point = new Point(1, 2);
         assertEquals(1, point.getX());
+
+        Point newPoint = new Point(point);
+        assertEquals(1, newPoint.getX());
     }
 
     @Test
     public void testGetY() {
         Point point = new Point(1, 2);
         assertEquals(2, point.getY());
+
+        Point newPoint = new Point(point);
+        assertEquals(2, newPoint.getY());
     }
 
     @Test

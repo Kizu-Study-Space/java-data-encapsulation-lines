@@ -9,6 +9,10 @@ public class Point {
         this.y = y;
     }
 
+    public Point moveRelative(final int x, final int y) {
+        return new Point(this.x + x, this.y + y);
+    }
+
     public int getX() { return x; }
     public int getY() { return y; }
 }

@@ -15,4 +15,12 @@ public class PointTest {
         Point point = new Point(1, 2);
         assertEquals(2, point.getY());
     }
+
+    @Test
+    public void testMoveRelative() {
+        Point point = new Point(1, 2);
+        Point newPoint = point.moveRelative(3, 4);
+        assertEquals(4, newPoint.getX());
+        assertEquals(6, newPoint.getY());
+    }
 }
